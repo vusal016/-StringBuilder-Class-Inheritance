@@ -8,16 +8,12 @@ namespace First_Class
 {
     public class Circle : Shape
     {
-        int radius;
+        public int radius;
 
         public Circle(int radius,string color):base (color)
         {
             this.radius = radius;
-        }
-        public void Area()
-        {
-            int area = radius * radius * 13;
-            Console.WriteLine(area);
+            this.area = 3.14 * radius * radius;
         }
 
     }

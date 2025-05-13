@@ -8,16 +8,12 @@ namespace First_Class
 {
     public class Rectangle : Shape
     {
-        int Length;
+        public int Length;
 
         public Rectangle(int length,string color): base (color)
         {
             Length = length;
-        }
-        public void Area()
-        {
-            int area = Length * 13;
-            Console.WriteLine(area);
+            this.area = length * length;
         }
         //Not: Burda taskda sahe hesablamasi ucun 2 deyisen lazimdir
         //length var amma eni yoxdur color ise hec bir elaqe yaratmir.
